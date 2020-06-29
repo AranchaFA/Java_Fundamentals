@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="DAO Personas">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="" visibility="public" xPosition="19.0" yPosition="13.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellidos" type="String" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Persona" returnType="int" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+          <Argument type="int" name="edad"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DAOEntrada" package="" visibility="public" xPosition="363.0" yPosition="13.0">
+      <Fields>
+        <Field name="fichero" type="File" visibility="private"/>
+        <Field name="fis" type="FileInputStream" visibility="private"/>
+        <Field name="ois" type="ObjectInputStream" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="File" name="fichero"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombreFichero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="abrirFicheroEntrada" returnType="void" visibility="public"/>
+        <Method name="leerUnObjeto" returnType="Object" visibility="public"/>
+        <Method name="cerrarFicheroEntrada" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Controlador" package="" visibility="public" xPosition="19.0" yPosition="197.0">
+      <Fields>
+        <Field name="daoEntrada" type="DAOEntrada" visibility="private"/>
+        <Field name="daoSalidaMayores" type="DAOSalida" visibility="private"/>
+        <Field name="daoSalidaMenores" type="DAOSalida" visibility="private"/>
+        <Field name="daoSalidaTodos" type="DAOSalida" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="DAOSalida" package="" visibility="public" xPosition="625.0" yPosition="13.0">
+      <Fields>
+        <Field name="fichero" type="File" visibility="private"/>
+        <Field name="fos" type="FileOutputStream" visibility="private"/>
+        <Field name="oos" type="ObjectOutputStream" visibility="private"/>
+        <Field name="moos" type="ModifyObjectOutputStream" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="File" name="fichero"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombreFichero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="abrirFichero" returnType="void" visibility="public"/>
+        <Method name="grabarConCabecera" returnType="void" visibility="public">
+          <Argument type="Object" name="objeto"/>
+        </Method>
+        <Method name="grabarSinCabecera" returnType="void" visibility="public">
+          <Argument type="Object" name="objeto"/>
+        </Method>
+        <Method name="cerrarFichero" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

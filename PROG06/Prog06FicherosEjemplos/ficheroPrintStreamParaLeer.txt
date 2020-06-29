@@ -1,0 +1,1 @@
+Esto es un fichero de texto que lo voy a leer con un PrintStream

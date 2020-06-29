@@ -1,0 +1,369 @@
+<mundiales>
+   <pilotos>
+      <piloto pilotoId="P01">
+         <nombre>Fernando Alonso</nombre>
+         <nacionalidad>Española</nacionalidad>
+      </piloto>
+      <piloto pilotoId="P02">
+         <nombre>Michel Schumacher</nombre>
+         <nacionalidad>Alemana</nacionalidad>
+      </piloto>
+      <piloto pilotoId="P03">
+         <nombre>Lewis Hamilton</nombre>
+         <nacionalidad>Britanica</nacionalidad>
+      </piloto>
+      <piloto pilotoId="P04">
+         <nombre>Jason Button</nombre>
+         <nacionalidad>Britanica</nacionalidad>
+         <titulos>
+            <titulo>2008</titulo>
+            <titulo>2009</titulo>
+         </titulos>
+      </piloto>
+      <piloto pilotoId="P05">
+         <nombre>Vettel</nombre>
+         <nacionalidad>Alemana</nacionalidad>
+         <titulos>
+            <titulo>2010</titulo>
+         </titulos>
+      </piloto>
+      <piloto pilotoId="P06">
+         <nombre>Mark Webber</nombre>
+         <nacionalidad>Australiana</nacionalidad>
+      </piloto>
+   </pilotos>
+
+	<circuitos>
+	   <circuito>
+	      <nombre circuitoId="C01">Montmelo</nombre>
+	      <pais>España</pais>
+	   </circuito>
+	   <circuito>
+	      <nombre circuitoId="C02">Silverston</nombre>
+	      <pais>Inglaterra</pais>
+	   </circuito>
+	   <circuito>
+	      <nombre circuitoId="C03">Circuito Urbano de Valencia</nombre>
+	      <pais>España</pais>
+	   </circuito>
+	   <circuito>
+	      <nombre circuitoId="C04">Monza</nombre>
+	      <pais>Italia</pais>
+	   </circuito>
+	</circuitos>   
+
+	<escuderias>
+	   <escuderia escuderiaId="E01">
+	      <nombre>Ferrari</nombre>
+	      <pais>Italia</pais>
+	   </escuderia>
+	   <escuderia escuderiaId="E02">
+	      <nombre>Mercedes</nombre>
+  	      <pais>Alemania</pais>
+	   </escuderia>
+	   <escuderia escuderiaId="E03">
+	      <nombre>Sauber</nombre>
+  	      <pais>Inglaterra</pais>
+	   </escuderia>
+	   <escuderia escuderiaId="E04">
+	      <nombre>Minardi</nombre>
+	      <pais>Italia</pais>	      
+	   </escuderia>
+	   <escuderia escuderiaId="E05">
+	      <nombre>Renault</nombre>
+	      <pais>Francia</pais>
+	   </escuderia>
+	   <escuderia escuderiaId="E06">
+	      <nombre>Mclaren</nombre>
+	      <pais>Ingalterra</pais>
+	   </escuderia>
+	   <escuderia escuderiaId="E07">
+	      <nombre>Red Bull</nombre>
+	      <pais>Alemania</pais>	      
+	   </escuderia>
+	</escuderias>
+
+	<campeonatos>
+	   <campeonato año="2008">
+	      <carreras>
+	         <carrera>
+	            <nombre circuitoId="C01">Gran Premio de Europa</nombre>
+	            <resultado>
+	               <piloto pilotoId="P03" equipoId="E06" posicion="1"/>
+  	               <piloto pilotoId="P01" equipoId="E06" posicion="2"/>
+	               <piloto pilotoId="P06" equipoId="E05" posicion="3"/>
+	            </resultado>
+	         </carrera>
+	         <carrera>
+	            <nombre circuitoId="C02">Gran Premio de Inglaterra</nombre>
+	            <resultado>
+	               <piloto pilotoId="P01" equipoId="E06" posicion="1"/>
+	               <piloto pilotoId="P02" equipoId="E01" posicion="2"/>
+	               <piloto pilotoId="P03" equipoId="E06" posicion="3"/>
+	            </resultado>
+	         </carrera>
+	         <carrera>
+	            <nombre circuitoId="C03">Gran Premio de España</nombre>
+	            <resultado>
+	               <piloto pilotoId="P02" equipoId="E01" posicion="1"/>
+	               <piloto pilotoId="P03" equipoId="E06" posicion="2"/>
+	               <piloto pilotoId="P04" equipoId="E05" posicion="3"/>
+	            </resultado>
+	         </carrera>
+	         <carrera>
+	            <nombre circuitoId="C04">Gran Premio de Italia</nombre>
+	            <resultado>
+	               <piloto pilotoId="P01" equipoId="E06" posicion="1"/>
+	               <piloto pilotoId="P03" equipoId="E06" posicion="2"/>
+	               <piloto pilotoId="P02" equipoId="E01" posicion="3"/>
+	            </resultado>
+	         </carrera>
+	   	</carreras>
+	   </campeonato>
+	   <campeonato año="2009">
+	      <carreras>
+	         <carrera>
+	            <nombre circuitoId="C01">Gran Premio de Europa</nombre>
+	            <resultado>
+	               <piloto pilotoId="P03" equipoId="E06" posicion="1"/>
+  	               <piloto pilotoId="P01" equipoId="E01" posicion="2"/>
+	               <piloto pilotoId="P05" equipoId="E07" posicion="3"/>
+	            </resultado>
+	         </carrera>
+	         <carrera>
+	            <nombre circuitoId="C02">Gran Premio de Inglaterra</nombre>
+	            <resultado>
+	               <piloto pilotoId="P04" equipoId="E03" posicion="1"/>
+	               <piloto pilotoId="P02" equipoId="E06" posicion="2"/>
+	               <piloto pilotoId="P06" equipoId="E07" posicion="3"/>
+	            </resultado>
+	         </carrera>
+	         <carrera>
+	            <nombre circuitoId="C03">Gran Premio de España</nombre>
+	            <resultado>
+	               <piloto pilotoId="P02" equipoId="E06" posicion="1"/>
+	               <piloto pilotoId="P04" equipoId="E03" posicion="2"/>
+	               <piloto pilotoId="P01" equipoId="E01" posicion="3"/>
+	            </resultado>
+	         </carrera>
+	         <carrera>
+	            <nombre circuitoId="C04">Gran Premio de Italia</nombre>
+	            <resultado>
+	               <piloto pilotoId="P01" equipoId="E01" posicion="1"/>
+	               <piloto pilotoId="P06" equipoId="E07" posicion="2"/>
+	               <piloto pilotoId="P05" equipoId="E07" posicion="3"/>
+	            </resultado>
+	         </carrera>
+	   	</carreras>
+	   </campeonato>
+	   <campeonato año="2010">
+	      <carreras>
+	         <carrera>
+	            <nombre circuitoId="C01">Gran Premio de Europa</nombre>
+	            <resultado>
+	               <piloto pilotoId="P05" equipoId="E07" posicion="1"/>
+  	               <piloto pilotoId="P06" equipoId="E07" posicion="2"/>
+	               <piloto pilotoId="P01" equipoId="E01" posicion="3"/>
+	            </resultado>
+	         </carrera>
+	         <carrera>
+	            <nombre circuitoId="C02">Gran Premio de Inglaterra</nombre>
+	            <resultado>
+	               <piloto pilotoId="P03" equipoId="E06" posicion="1"/>
+	               <piloto pilotoId="P06" equipoId="E07" posicion="2"/>
+	               <piloto pilotoId="P02" equipoId="E02" posicion="3"/>
+	            </resultado>
+	         </carrera>
+	         <carrera>
+	            <nombre circuitoId="C03">Gran Premio de España</nombre>
+	            <resultado>
+	               <piloto pilotoId="P01" equipoId="E01" posicion="1"/>
+	               <piloto pilotoId="P05" equipoId="E07" posicion="2"/>
+	               <piloto pilotoId="P06" equipoId="E07" posicion="3"/>
+	            </resultado>
+	         </carrera>
+	         <carrera>
+	            <nombre circuitoId="C04">Gran Premio de Italia</nombre>
+	            <resultado>
+	               <piloto pilotoId="P06" equipoId="E07" posicion="1"/>
+	               <piloto pilotoId="P05" equipoId="E07" posicion="2"/>
+	               <piloto pilotoId="P03" equipoId="E06" posicion="3"/>
+	            </resultado>
+	         </carrera>
+	   	</carreras>
+	   </campeonato>
+	</campeonatos>
+</mundiales>
+
+
+<!-- 
+
+********  MUNDIALES F1  ********
+
+a) Datos de los pilotos
+/mundiales/pilotos
+//pilotos
+
+b) Nombres de los pilotos (elementos)
+/mundiales/pilotos/piloto/nombre
+//piloto/nombre
+
+c) Nombres de los pilotos (valores)
+/mundiales/pilotos/piloto/nombre/text()
+//piloto/nombre/text()
+
+d) Datos de los pilotos pero sin pasar por el elemento mundiales en su “caminin”
+//pilotos
+
+e) Nacionalidades a través de una ruta absoluta (elementos)
+/mundiales/pilotos/piloto/nacionalidad
+
+f) Nacionalidades a través de una ruta relativa (elementos)
+//nacionalidad
+
+g) Nacionalidades a través de una ruta absoluta (valores)
+/mundiales/pilotos/piloto/nacionalidad/text()
+
+h) Nacionalidades a través de una ruta relativa (valores)
+//nacionalidad/text()
+
+i) Nodo (o conjunto de nodos) padre del atributo escuderiaId
+//@escuderiaId/..
+
+j) Todos los atributos
+//@*
+
+k) Nodos padres de todos los atributos
+//@*/..
+
+l) Todos los atributos de los resultados de las carreras
+//resultado//@*
+
+m)Padres del atributo pilotoId
+//@pilotoId/..
+
+n) Los valores de todos los países
+//pais/text()
+
+o) Los valores de los nombres de las escuderías y los de los circuitos
+//escuderia/nombre/text() | //circuito/nombre/text()
+
+p) Los nombres de las escuderías (como elementos)
+//escuderia/nombre
+
+q) Los años de los campeonatos
+//campeonato/@año
+
+r) Los nombres (no los elementos) de las escuderías trabajando con referencias absolutas.
+/mundiales/escuderias/escuderia/nombre/text()
+
+s) Los nombres (no los elementos) de las escuderías trabajando con referencias relativas.
+//escuderia/nombre/text()
+
+t) Los nombres de las escuderías partiendo del nodo país (de la escudería)
+//escuderia/pais/../nombre
+
+u) El valor del atributo circuitoId (que es sucesor del elemento carrera).
+//carrera//@circuitoId
+
+v) El valor del atributo circuitoId (que es sucesor del elemento carrera) pero desde el elemento resultado.
+//resultado/..//@circuitoId
+
+w) Todos los atributos del elemento piloto (nieto de carrera) pero desde el atributo circuitoId (hijo de carrera)
+//@circuitoId/../../resultado/piloto/@*
+
+
+
+
+********  PILOTOS  ********
+
+a) Nombre de todos los pilotos de Nacionalidad Británica
+//piloto[nacionalidad='Britanica']/nombre/text()
+
+b) Pilotos que han quedado al menos una vez los primeros
+//pilotos/piloto[@pilotoId=//resultado/piloto[@posicion='1']/@pilotoId]/nombre/text()
+
+c) pilotos que han sido campeones al menos una vez
+//piloto[titulos]/nombre/text()
+
+d) Nombre de los pilotos que no han sido campeones del mundo (no tienen Títulos)
+//piloto[count(titulos)<1]/nombre/text()
+
+e) información asociada (todos los elementos con títulos incluidos) a Jason Button
+//piloto[nombre='Jason Button']/*
+
+f) Nombre de los pilotos que han ganado mas de un titulo
+//piloto[count(titulos/titulo)>1]/nombre/text()
+
+g) Nombre de pilotos alemanes que han sido campeones del mundo a partir del 2008
+(2008 inclusive)
+//pilotos/piloto[titulos/titulo>'2007' and nacionalidad='Alemana']/nombre/text()
+
+h) Nombre de los circuitos que se encuentran en España
+//circuito[pais="España"]/nombre/text()
+
+i) Número de carreras celebradas en 2010
+*** Me sale 0 y son 4
+count(carrera[../../../campeonato[@año='2010']])
+
+j) Nombre de los Grandes premios y código de los pilotos que han ganado alguna carrera en 2007
+//campeonato[@año='2007']//nombre/text()|//piloto[pilotoId=//campeonato[@año='2007']//piloto[@posicion='1']/@pilotoId]/nombre/text()
+
+k) Código de los pilotos que han ganado en el gran premio de España
+//carrera[nombre='Gran Premio de España']/resultado/piloto[@posicion='1']/@pilotoId
+
+l) Nombre de los pilotos que han ganado alguna carrera entre el 2007 y 2009 (amb
+os inclusive)
+//pilotos/piloto[@pilotoId=//campeonato[@año>=2007][@año<=2009]//piloto[@posicion=1]/@pilotoId]/nombre
+
+m) Nombre del circuito donde se celebró el Gran Premio de España en 2009
+//circuitos/circuito/nombre[@circuitoId=//campeonato[@año=2009]//carrera[nombre='Gran Premio de España']/nombre/@circuitoId]
+
+n) Nombre de los circuitos en España que han albergado carreras posteriores al 2008
+(inclusive)
+//circuitos/circuito/nombre[@circuitoId=//campeonato[@año>=2008]//carrera[nombre='Gran Premio de España']/nombre/@circuitoId]
+
+o) Nombre de los pilotos de Mercedes en 2010
+//pilotos/piloto[@pilotoId=//campeonato[@año=2010]//piloto[@equipoId=//escuderia[nombre='Mercedes']/@escuderiaId]/@pilotoId]
+
+p) Código de los pilotos que han ganado en circuitos Urbanos
+//pilotos/piloto[@pilotoId=//carrera[nombre/@circuitoId=//circuito[contains(nombre,'Urbano')]//@circuitoId]//piloto[@posicion=1]/@pilotoId]
+
+q) Nombre de los pilotos que han ganado alguna carrera con Ferrari
+//pilotos/piloto[@pilotoId=//resultado/piloto[@posicion=1][@equipoId=//escuderia[nombre='Ferrari']/@escuderiaId]/@pilotoId]/nombre
+
+r) Apellido del piloto P06 (usar substring con el nombre)
+substring(//pilotos/piloto[@pilotoId='P06']/nombre/text(),6)
+
+s) Nombre de los pilotos cuyo nombre contiene la cadena de texto “i” y han ganado al
+guna carrera
+//pilotos/piloto[contains(nombre/text(),'i')][@pilotoId=//resultado/piloto[@posicion=1]/@pilotoId]/nombre
+
+t) Nombre de los pilotos que han ganado carreras en el menor año (usar función min)
+*** No funciona, no coge la función min() ***
+//pilotos/piloto[@pilotoId=//campeonato[@año=min(@año)]//resultado/piloto[@posicion=1]/@pilotoId]/nombre
+
+u) Nombres de los Grandes premios cuya longitud de nombre sea mayor a 22
+//carrera[string-length(nombre)>22]/nombre
+
+v) Países que empiezan por I, a los que pertenecen los circuitos
+//circuito[starts-with(pais,'I')]/pais
+
+w) Numero de pilotos con nacionalidad española
+count(//piloto[nacionalidad='Española'])
+
+x) Nombre de los pilotos menos los que son de nacionalidad española (hazlo de dos fo
+rmas diferentes)
+//piloto[nacionalidad!='Española']/nombre
+//piloto[contains(nacionalidad,'ñ')=false]/nombre
+
+y) Id de los pilotos ganadores (en primera posición) de las carreras realizadas en el ult
+imo circuito del fichero
+//campeonato[last()]//carrera[last()]//piloto[@posicion=1]/@pilotoId
+
+z) Nombre del piloto con la misma nacionalidad que el piloto con ID=P03 (usa except)
+Multiplica por 5 el numero de Id del piloto que quedó segundo en la ultima Carrera aa)del primer campeonato (usa substring para sacar el numero, number para transfor
+marlo en numero)
+
+
+-->

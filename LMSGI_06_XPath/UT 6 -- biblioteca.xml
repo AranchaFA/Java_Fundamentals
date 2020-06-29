@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+  <libro>
+    <titulo>La vida está en otra parte</titulo>
+    <autor>Milan Kundera</autor>
+    <fechaPublicacion año="1973"/>
+    <precio>23.5</precio>
+  </libro>
+  <libro>
+    <titulo>Pantaleón y las visitadoras</titulo>
+    <autor fechaNacimiento="28/03/1936">Mario Vargas Llosa</autor>
+    <fechaPublicacion año="1973"/>
+    <precio>30.0</precio>
+  </libro>
+  <libro>
+    <titulo>Conversación en la catedral</titulo>
+    <autor fechaNacimiento="28/03/1936">Mario Vargas Llosa</autor>
+    <fechaPublicacion año="1969"/>
+    <precio>28.25</precio>
+  </libro>
+</biblioteca>
+
+
+<!--
+//libro[2] -> Nos selecciona el elemento libro, el segundo
+//libro[last()] -> Nos selecciona el elemento libro, el último
+//libro[precio>=24] -> Nos selecciona los elementos libro cuyo elemento precio es >=24€
+//libro[autor!='Mario Vargas Llosa'] -> Nos selecciona los elementos libro cuyo elemento autor no es Mario Vargas Llosa
+//libro[last()-1]/fechaPublicacion/@año -> Fecha de publicación del penúltimo libro
+//libro/titulo/text() -> Seleccionar todos los títulos (no los elementos)
+//libro[last()-2]/titulo -> Nodo del título del antepenúltimo libro
+//libro/precio/text() -> Seleccionar el precio de todos los nodos (texto)
+//libro[precio>25]/precio -> Seleccionar el precio de los libros con precio >25€ (elemento)
+
+- Otras soluciones:
+//precio[number()>25] -> Seleccionar el precio de los libros con precio >25€ (elemento)
+//titulo[../precio>25]/text() -> Seleccionar el título de los libros con precio >25€ (elemento)
+
+//libro[precio>25]/precio/text()|//libro[precio>25]/titulo/text() -> Seleccionar el título y el precio de los libros con precio >25€ (texto)
+
+- -  FUNCIONES  - -
+count(//libro[autor="Milan Kundera"]) -> Cuántos libros tenemos de Milan Kundera
+name(//precio/..) -> Nombre del elemento padre de precio
+contains(//libro[last()]/titulo/text(),"catedral") -> ¿El título del último libro contiene la palabra catedral?
+translate(//libro[1]/titulo/text(),"á","A")-> Cambia el carácter á por A en el título del primer libro
+concat(//libro[1]/titulo/text(),"-",//autor/text()) -> Título y autor del primer libro
+substring(//libro[1]/autor/@fechaNacimiento,7,4) -> Año de la fecha de nacimiento del autor del primer libro
+    ("DD/MM/YYYY") -> Empieza en la posición 7 y cogemos 4 caracteres
+sum(//precio)*1.21 -> Suma de los precios totales con el 21% de IVA
+concat(sum(//precio)," + ",sum(//precio)*0.21," = ",sum(//precio)*1.21) -> Mostrar precio+IVA=Total bonito
+count(//libro[fechaPublicacion/@año="1973"]) -> Cantidad de libros publicados en 1973
+
+
+
+-->

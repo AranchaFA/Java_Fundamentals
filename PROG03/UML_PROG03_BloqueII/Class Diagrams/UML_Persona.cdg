@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="UML_Persona">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="" visibility="public" xPosition="229.0" yPosition="148.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellidos" type="String" visibility="private"/>
+        <Field name="nif" type="String" visibility="private" isFinal="true"/>
+        <Field name="edad" type="short" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+          <Argument type="String" name="nif"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

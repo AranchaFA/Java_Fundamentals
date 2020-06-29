@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- TAREA XPath - universidad -->
+<universidad>
+
+    <nombre>Universidad de Victoria</nombre>
+    <pais>España</pais>
+
+<!-- CARRERAS -->
+
+    <carreras>
+        <carrera id="c01">
+            <nombre>I.T. Informática</nombre>
+            <plan>2003</plan>
+            <creditos>250</creditos>
+            <centro>Escuela de Informática</centro>
+            <subdirector>Alfonso Martín  Luque</subdirector>
+        </carrera>
+    </carreras>
+
+<!-- ASIGNATURAS -->
+
+    <asignaturas>
+        <asignatura id="a01" titulacion="c01">
+            <nombre>Ofimática</nombre>
+            <creditos_teoricos>3</creditos_teoricos>
+            <creditos_practicos>1.5</creditos_practicos>
+            <trimestre>1</trimestre>
+        </asignatura>
+    </asignaturas>
+
+<!-- ALUMNOS -->
+
+    <alumnos>
+        <alumno id="e01" beca="si">
+            <apellido1>Rivas</apellido1>
+            <apellido2>Santos</apellido2>
+            <nombre>Víctor Manuel</nombre>
+            <sexo>Hombre</sexo>
+            <estudios>
+                <carrera codigo="c01"/>
+                <asignaturas>
+                    <asignatura codigo="a01"/>
+                    <asignatura codigo="a03"/>
+                    <asignatura codigo="a05"/>
+                    <asignatura codigo="a09"/>
+                </asignaturas>
+                <proyecto>Estudio de Salinidad del Pantano Iris</proyecto>
+            </estudios>
+        </alumno>
+    </alumnos>
+
+</universidad>

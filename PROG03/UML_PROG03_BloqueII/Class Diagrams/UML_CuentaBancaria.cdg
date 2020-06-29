@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="UML_CuentaBancaria">
+  <ClassDiagramComponents>
+    <Class name="CuentaBancaria" package="" visibility="public" xPosition="194.0" yPosition="104.0">
+      <Fields>
+        <Field name="nombreTitular" type="String" visibility="private"/>
+        <Field name="numeroCuenta" type="String" visibility="private" isFinal="true"/>
+        <Field name="saldo" type="Float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombreTitular"/>
+          <Argument type="String" name="numeroCuenta"/>
+          <Argument type="float" name="saldo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="ingresarDinero" returnType="void" visibility="public">
+          <Argument type="float" name="cantidadIngresada"/>
+        </Method>
+        <Method name="retirarDinero" returnType="void" visibility="public">
+          <Argument type="float" name="cantidadRetirada"/>
+        </Method>
+        <Method name="mostrarSaldo" returnType="float" visibility="public"/>
+        <Method name="saldoInsuficiente" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

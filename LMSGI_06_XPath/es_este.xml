@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<alumnos>
+    <alumno>
+        <nombre>Juanito</nombre>
+        <apellido>Valderrama</apellido>
+        <DNI>434235</DNI>
+        <fechanacimiento>
+            <dia>30</dia>
+            <mes>3</mes>
+            <anio>1995</anio>
+        </fechanacimiento>
+        <beca concedida_2014="SI" entidad="uniovi">15000</beca>
+        <pagos_anuales>3</pagos_anuales>
+        <direccion>
+            <calle>Camino de la Locura</calle>
+            <numero>34</numero>
+            <poblacion>Siero</poblacion>
+            <pais>Siero Landia</pais>
+        </direccion>
+        <telefono>987654321</telefono>
+        <email>juanito1@hola.com</email>
+        <email>juanito2@hola.com</email>
+        <email>juanito3@hola.com</email>
+    </alumno>
+    <alumno>
+        <nombre>Ana</nombre>
+        <apellido>Botella</apellido>
+        <DNI>63463636</DNI>
+        <fechanacimiento>
+            <dia>12</dia>
+            <mes>8</mes>
+            <anio>1993</anio>
+        </fechanacimiento>
+        <beca concedida_2014="NO" entidad="andauni">20000</beca>
+        <pagos_anuales>1</pagos_anuales>
+        <direccion>
+            <calle>Calle de las Flores</calle>
+            <numero>25</numero>
+            <poblacion>Corvera</poblacion>
+            <pais>Aviles Mola</pais>
+        </direccion>
+        <telefono>912345678</telefono>
+        <telefono>666777888</telefono>
+        <email>pgrillo@hotmail.com</email>
+    </alumno>
+    <alumno>
+        <nombre>Pablo</nombre>
+        <apellido>Marmol</apellido>
+        <DNI>465346347</DNI>
+        <fechanacimiento>
+            <dia>3</dia>
+            <mes>4</mes>
+            <anio>1997</anio>
+        </fechanacimiento>
+        <beca concedida_2014="SI" entidad="uniovi">32000</beca>
+        <pagos_anuales>12</pagos_anuales>
+        <direccion>
+            <calle>Avenida de la Felicidad</calle>
+            <numero>31</numero>
+            <poblacion>Las Regueras</poblacion>
+            <pais>Aviles Mola</pais>
+        </direccion>
+    </alumno>
+</alumnos>
+
+
+
+
+<!--
+
+1: Lista los nombres de los alumnos nacidos entre 1996 y 2000.
+//alumno[fechanacimiento[anio>1996 and anio<2000]]/nombre/text()
+//alumno[fechanacimiento/anio>1996 and fechanacimiento/anio<2000]/nombre/text()
+
+2: Nombres de los alumnos que tengan exactamente 3 emails.
+//alumno[count(email)=3]/nombre/text()
+
+3: Promedio de edad de los alumnos (toma la edad como la diferencia entre 2019 y el año de nacimiento).
+2019-sum(//anio)divcount(//alumno) -> Se usa numero1DIVnumero2 para dividir, NO LA BARRA '/'
+
+4: Dirección postal completa del tercer alumno con el formato de la imagen:
+	Avenida de la Felicidad, 31. Las Regueras (Avilés Mola)
+concat(//alumno[3]/direccion/calle/text(),', ',//alumno[3]/direccion/numero/text(),'. ',//alumno[3]/direccion/poblacion/text(),' (',//alumno[3]/direccion/pais/text(),')')
+
+5: Lista los teléfonos que empiecen por 6 (los móviles)
+*** NO SALE BIEN ***
+//telefono[substring(//telefono,1,1)='6']/text()
+
+-->

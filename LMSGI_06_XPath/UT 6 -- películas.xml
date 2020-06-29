@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Documento XML para los ejercicios de la UT 6 -->
+<peliculas>
+	<pelicula>
+		<nombre>Super 8</nombre>
+		<valoracion puntos="4"/>
+		<publico>Adultos</publico>
+	</pelicula>
+	<pelicula>
+		<nombre>Los pitufos</nombre>
+		<valoracion puntos="3"/>
+		<publico>Todos los públicos</publico>
+	</pelicula>
+</peliculas>
+
+
+<!--
+
+count(//pelicula[valoracion/@puntos>=4]) -> Cuántas películas tienen 4 o más ptos de valoración
+
+
+-->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Documento XML para los ejercicios de la UT 6 -->
+<edificio>
+	<vivienda>
+		<piso>1</piso>
+		<puerta>A</puerta>
+		<vecinos>
+			<nombre>David</nombre>
+			<nombre>Sara</nombre>
+		</vecinos>
+	</vivienda>
+	<vivienda>
+		<piso>1</piso>
+		<puerta>B</puerta>
+		<vecinos>
+			<nombre>Irene</nombre>
+			<nombre>Jaime</nombre>
+		</vecinos>
+	</vivienda>
+</edificio>
+
+
+
+<!--
+
+/edificio/vivienda/vecinos/nombre -> Ruta de acceso al elemento nombre
+/edificio/vivienda/vecinos/nombre/text() -> Valor del elemento nombre
+/edificio/vivienda[piso=1] -> Ruta de acceso que seleccione las viviendas que hay en el piso 1
+
+-->

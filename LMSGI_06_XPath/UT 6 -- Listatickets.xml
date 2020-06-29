@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Documento XML para los ejercicios de la UT 6 -->
+<listatickets>
+   <ticket>
+       <numero>7483</numero>
+       <fecha>2018-08-20</fecha>
+       <hora>22:00:00</hora>
+       <producto>
+           <nombre>Agua</nombre>
+           <precio>1</precio>
+       </producto>
+       <producto>
+           <nombre>Refresco</nombre>
+           <precio>1.5</precio>
+       </producto>
+       <total>2.5</total>
+   </ticket>
+   <ticket>
+       <numero>7484</numero>
+       <fecha>2018-08-25</fecha>
+       <hora>22:05:00</hora>
+       <producto>
+           <nombre>Refresco</nombre>
+           <precio>1.5</precio>
+       </producto>
+       <producto>
+           <nombre>Refresco</nombre>
+           <precio>1.5</precio>
+       </producto>
+       <total>3</total>
+   </ticket>
+</listatickets>
+
+
+<!--
+
+sum(//precio) -> Suma de los precios
+concat(sum(//total)," + ",sum(//total)*0.21," = ",sum(//total)*1.21) -> Suma de los totales aplicando el IVA
+-> 
+
+
+-->

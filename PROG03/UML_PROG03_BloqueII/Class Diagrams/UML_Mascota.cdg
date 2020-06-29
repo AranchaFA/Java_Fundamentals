@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="UML_Mascota">
+  <ClassDiagramComponents>
+    <Class name="Mascota" package="" visibility="public" xPosition="220.0" yPosition="140.0">
+      <Fields>
+        <Field name="tipo" type="String" visibility="private"/>
+        <Field name="raza" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="tipo"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
